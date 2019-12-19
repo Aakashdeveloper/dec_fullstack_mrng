@@ -4,3 +4,8 @@ block level
 > Always start from new line p,h1,div
 inline element
 > Start from same line <span><a><img>
+
+
+if one tag have id and  class 
+in css we have common property byy tagName, byId and byClass
+Inline > byId > byClass >byTag

@@ -1,0 +1,60 @@
+.sameline{
+    height: 250px;
+    width:300px;
+    background:thistle;
+    float: left;
+    margin-left:10px;
+    padding: 5px;
+    overflow: scroll;
+    box-shadow: 5px 5px gray ;
+    border:5px double teal;
+    border-radius: 10%;
+    opacity: 0.9;
+}
+
+.main_div{
+    margin-left:80px;
+    display:block;
+}
+
+h1{
+    text-align: center;
+}
+
+.sameline h2{
+    text-align: center;
+    color:hotpink
+}
+
+.topmargin{
+    margin-top:10px;
+    background:rgb(245, 162, 148);
+    color:#fff
+}
+
+.topmargin h2{
+    color:rgb(80, 77, 77)
+}
+
+.circlediv{
+    border-radius:45%
+}
+
+/*body{
+    background-image:linear-gradient(to top, pink,rgb(148, 230, 245),rgb(180, 252, 180))
+    background-image:radial-gradient(pink,rgb(148, 230, 245),rgb(180, 252, 180))
+}
+*/
+
+@media screen and (min-width:400px){
+    body{
+        background-color:rgb(252, 252, 90)
+    }
+
+}
+
+@media screen and (min-width:800px){
+    body{
+        background-color:rgb(253, 148, 206)
+    }
+}

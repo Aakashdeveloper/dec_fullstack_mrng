@@ -1,0 +1,23 @@
+h1{
+    text-align: center;
+    color:greenyellow
+}
+div{
+    height:500px;
+    width:500px;
+    background:darkblue
+}
+#one{
+    color:#4EE2F3
+}
+#two{
+    font-size:60px;
+}
+.mydiv{
+    background:rgb(252, 223, 129);
+    border:15px groove teal;
+}
+.heading{
+    text-shadow:3px 3px hotpink;
+    color:indianred
+}
