@@ -10,6 +10,14 @@
     border:5px double teal;
     border-radius: 10%;
     opacity: 0.9;
+    animation-name:changebackground;
+    animation-duration: 8s;
+    
+}
+
+@keyframes changebackground{
+    from{background: thistle; transform: rotate(0deg);}
+    to{background:dodgerblue; transform: rotate(360deg)}
 }
 
 .main_div{
@@ -29,7 +37,8 @@ h1{
 .topmargin{
     margin-top:10px;
     background:rgb(245, 162, 148);
-    color:#fff
+    color:#fff;
+    
 }
 
 .topmargin h2{
@@ -37,10 +46,40 @@ h1{
 }
 
 .circlediv{
-    border-radius:45%
+    border-radius:45%;
+    animation-name:changemargin;
+    animation-duration: 8s;
+
 }
 
-/*body{
+@keyframes changemargin{
+    from{margin-left: 10px;}
+    to{margin-left: 1000px;}
+}
+
+@keyframes random{
+    0% {margin-left: 10px;}
+    20% {margin-left: 1000px;}
+    60% {margin-left: 1000px;}
+    80% {margin-left: 1000px;}
+    100% {margin-left: 1000px;}
+}
+
+
+.topmargin:hover{
+    transform: scale(1.1,1.1);
+    background:tan
+}
+
+
+/*
+-ms-transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+    transform: rotate(5deg);
+transform: skewY(10deg);
+transform: scale(1,1);
+body{
     background-image:linear-gradient(to top, pink,rgb(148, 230, 245),rgb(180, 252, 180))
     background-image:radial-gradient(pink,rgb(148, 230, 245),rgb(180, 252, 180))
 }
@@ -52,9 +91,21 @@ h1{
     }
 
 }
+@media screen and (min-width:600px){
+    body{
+        background-color:rgb(135, 235, 218)
+    }
 
-@media screen and (min-width:800px){
+}
+
+@media screen and (min-width:1000px){
     body{
         background-color:rgb(253, 148, 206)
+    }
+}
+
+@media screen and (min-width:1200px){
+    body{
+        background-color:rgb(222, 243, 173)
     }
 }
