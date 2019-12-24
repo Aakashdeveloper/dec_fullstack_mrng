@@ -8,4 +8,12 @@ inline element
 
 if one tag have id and  class 
 in css we have common property byy tagName, byId and byClass
-Inline > byId > byClass >byTag
+Inline > byId > byClass >
+
+
+
+succeess
+warning
+danger
+info
+primary
