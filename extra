@@ -11,9 +11,18 @@ in css we have common property byy tagName, byId and byClass
 Inline > byId > byClass >
 
 
+bootstrap3
+> col-lg col-md col-sm col-xs
+> default, success, warning, danger, info, primary
 
-succeess
-warning
-danger
-info
-primary
+bootstrap4
+> col-xl col-lg col-md col-sm col-
+> default, primary, secondary, success, info, warning, danger, dark , light
+>>>>Remove<<<<<
+Glyphicon
+Panel
+
+>>>>Added<<<<<
+Cards
+Spinners
+Favicon
