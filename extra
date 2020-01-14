@@ -26,3 +26,79 @@ Panel
 Cards
 Spinners
 Favicon
+
+
+
+#@#####hile (guess != randomNumber) {     var guess = parseInt(prompt("Guess a number between 1 and 10"));     if (guess === randomNumber) {         console.log("Congrats!! You got it right in" + i + "time and random number is" + randomNumber);         break;     }     if (i > NumberOfChances) {         console.log("You have completed five chances and you lost the game");         break     }      i += 1; } var user=['Pradeep','Kittu','John','Amit'] var name=prompt("Enter a name:"); if(user.indexOf(name) != -1){     console.log("Allow access");  } else{     user.push(name);     console.log("pushed"); } 
+
+-------------------
+NPM
+-------------
+JSON> Javascript object notation
+[
+{
+    "name":"John",
+    "class":1
+},
+{
+    "name":"ammy",
+    "class":2
+}
+]
+
+----------------------
+    Package.JSON
+----------------------
+**NodeJs must installed
+>>Navigate to the folder where you want to create
+>>npm init 
+>>answer all questions
+>>type "yes"
+
+________________
+Local depedency
+Global 
+
+----------------------
+   Step to local depedency
+----------------------
+>>Navigate to the folder where you want to install 
+>> npm i <packageename>/npm install <packagename>
+
+----------------------
+   Step to Global depedency
+----------------------
+#Win
+(one time)
+> run cmd as admin
+> npm i -g nodemon
+
+mac/linux
+> open terminal
+> sudo npm i -g nodemon
+
+----------------------
+   Step to create application
+----------------------
+> npm i -g @aakashdeveloper/create-nodee-app 
+> Navigate to the folder where you want to create
+> generate
+> select node app
+> provide app name
+> cd myapp
+> npm start
+
+////
+inbuilt -1
+fullstack - 4
+weatherapp -.5
+email with node - .5
+api        - 1
+postgress with node .5
+node with redis-.5
+login logout-4
+dashboard-3
+////
+react - 3
+///
+angular -3
