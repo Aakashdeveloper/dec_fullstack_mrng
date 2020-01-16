@@ -102,3 +102,7 @@ dashboard-3
 react - 3
 ///
 angular -3
+
+/////
+npm i -g nodemon
+/////

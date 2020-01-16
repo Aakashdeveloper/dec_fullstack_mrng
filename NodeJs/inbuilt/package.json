@@ -1,0 +1,16 @@
+{
+  "name": "inbuilt",
+  "version": "1.0.0",
+  "description": "this is api",
+  "main": "fs.js",
+  "scripts": {
+    "start":"node staticApi",
+    "dev":"nodemon staticApi",
+    "nareshit":"nodemon server"
+  },
+  "keywords": [
+    "nodee"
+  ],
+  "author": "nareshit",
+  "license": "ISC"
+}
