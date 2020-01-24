@@ -106,3 +106,99 @@ angular -3
 /////
 npm i -g nodemon
 /////
+
+/////
+sno | hindi| english
+1   | 80   | 
+2   |      |80
+
+-----------------
+[
+    {
+        sno:1,
+        hindi:80
+    },
+    {
+        sno:2,
+        english:80
+    }
+]
+---------------
+
+SQL        | NoSql
+database   | database
+table      | Collections
+row        | document
+
+
+-----MongoDB-----
+https://www.mongodb.com/what-is-mongodb
+
+Windows
+> C:/data/db 
+
+Mac/linux
+mkdir /System/Volumes/Data/data/db
+
+#Win
+In One Cmd prompt
+> mongod (server)
+
+In Second Cmd prompt
+> mongo (client)
+
+#Mac
+In One Cmd prompt
+> sudo mongod --dbpath /System/Volumes/Data/data/db (server)
+
+In Second Cmd prompt
+> mongo (client)
+
+>mongodb://127.0.0.1:27017
+
+//////
+ show dbs
+ use classpractice
+ show collections
+ db.myproduct.find()
+ db.myproduct.find().pretty()
+
+//Projection
+db.myproduct.find({},{class:1})
+ db.myproduct.find({},{class:1,_id:0})
+ db.myproduct.find({},{class:0,_id:0})
+ db.myproduct.find({},{id:1,class:1,_id:0})
+
+//Condition
+db.myproduct.find({"id":4},{class:1,_id:0})
+db.myproduct.find({"id":4,"class":"Mongo"},{class:1,_id:0})
+db.myproduct.find({"id":4,"class":"AI"},{class:1,_id:0})
+{ "class" : "AI" }
+> db.myproduct.find({"id":4"class":"AI"}{},{class:1,_id:0}).count()
+1
+> db.myproduct.count()
+
+db.myproduct.find({$or:[{id:4},{class:"Mongo"}]})
+
+/////////
+db.myproduct.insert({"id":6,class:"Ansible",place:"Nareshit"})
+db.myproduct.insert({"_id":002,"id":7,class:"Jenkis",place:"Nareshit"})
+db.fullstackdb.insert({_id:7677557622756, "id":2,"name":"Ammy",city:"London",phone:8789885})
+
+////////////
+
+db.myproduct.find().sort({"place":-1})
+db.myproduct.find().sort({"place":-1}).limit(3)
+
+
+
+
+CRUD
+create   => Post
+Read     => Get
+update   => PUT
+Delete   => DELETE
+
+
+redis
+Email server
