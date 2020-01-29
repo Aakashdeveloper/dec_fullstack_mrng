@@ -233,3 +233,14 @@ const deleteUser = (request, response) => {
     response.status(200).send(`User deleted with ID: ${id}`)
   })
 }
+
+
+////
+redis-server
+redis-cli 
+
+KEYS *
+set key value
+get 'keyname'
+
+npm i express axios redis

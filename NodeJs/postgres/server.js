@@ -1,6 +1,7 @@
 var express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
+const cors = require('cors');
 const port = 3100;
 const Pool = require('pg').Pool
 const pool = new Pool({
@@ -10,6 +11,8 @@ const pool = new Pool({
     password:'docker',
     port:5432
 })
+
+app.use(cros());
 
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json());

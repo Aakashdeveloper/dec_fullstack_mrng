@@ -57,6 +57,8 @@ app.post('/addUser',(req,res) => {
 app.get('/',(req,res) => {
     db.collection(col_name).find({active:true}).toArray((err,result) => {
         if(err) throw err;
+        res.setHeader('Access-Control-Allow-Origin','*');
+        res.setHeader('Access-Control-Allow-headers','Origin,X_Request-With,Content-Type,Accept');
         res.render('index',{data:result})
     })
 });
