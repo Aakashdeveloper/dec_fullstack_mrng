@@ -89,15 +89,15 @@ mac/linux
 > npm start
 
 ////
-inbuilt -1
-fullstack - 4
-weatherapp -.5
-email with node - .5
-api        - 1
+inbuilt 
+fullstack 
+weatherapp 
+api       
+login logout
+dashboard
+email with node
 postgress with node .5
 node with redis-.5
-login logout-4
-dashboard-3
 ////
 react - 3
 ///
@@ -202,3 +202,34 @@ Delete   => DELETE
 
 redis
 Email server
+
+npm i bcryptjs body-parser cors express jsonwebtoken mongoose
+npm i pg express
+
+
+const updateUser = (request, response) => {
+  const id = parseInt(request.params.id)
+  const { name, email } = request.body
+
+  pool.query(
+    'UPDATE users SET name = $1, email = $2 WHERE id = $3',
+    [name, email, id],
+    (error, results) => {
+      if (error) {
+        throw error
+      }
+      response.status(200).send(`User modified with ID: ${id}`)
+    }
+  )
+}
+
+const deleteUser = (request, response) => {
+  const id = parseInt(request.params.id)
+
+  pool.query('DELETE FROM users WHERE id = $1', [id], (error, results) => {
+    if (error) {
+      throw error
+    }
+    response.status(200).send(`User deleted with ID: ${id}`)
+  })
+}
