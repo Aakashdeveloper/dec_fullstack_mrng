@@ -96,8 +96,8 @@ api
 login logout
 dashboard
 email with node
-postgress with node .5
-node with redis-.5
+postgress with node
+node with redis
 ////
 react - 3
 ///
@@ -244,3 +244,13 @@ set key value
 get 'keyname'
 
 npm i express axios redis
+
+
+npm i @babel/core @babel/preset-env @babel/register
+
+docker build . -t aakashdeveloper/weatherapp
+docker image ls
+docker run -p 8099:8700 aakashdeveloper/weatherapp
+
+
+npm i mocha chai chai-http

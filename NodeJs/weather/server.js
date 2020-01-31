@@ -1,7 +1,7 @@
-var express = require('express')
+import express from 'express';
 var app = express();
 var port = 8700
-var request = require('request');
+import request from 'request';
 
 //Static files path
 app.use(express.static(__dirname+'/public'));
@@ -11,6 +11,10 @@ app.set('views', './src/views');
 app.set('view engine','ejs')
 
 const ApiUrl ="http://api.openweathermap.org/data/2.5/forecast/daily?q=London&mode=json&units=metric&cnt=5&appid=fbf712a5a83d7305c3cda4ca8fe7ef29";
+
+app.get('/',(req,res) => {
+    res.send('App is running')
+});
 
 app.get('/weather',(req,res) => {
     request(ApiUrl,(err,response) => {
