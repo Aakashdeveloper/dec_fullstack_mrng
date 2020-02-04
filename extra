@@ -254,3 +254,13 @@ docker run -p 8099:8700 aakashdeveloper/weatherapp
 
 
 npm i mocha chai chai-http
+
+
+////
+npm i -g create-react-app
+> create-react-app
+npm i -g create-react-apps
+>reduxapp
+
+
+
