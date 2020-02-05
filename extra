@@ -98,10 +98,8 @@ dashboard
 email with node
 postgress with node
 node with redis
-////
-react - 3
-///
-angular -3
+react 
+angular
 
 /////
 npm i -g nodemon
@@ -263,4 +261,12 @@ npm i -g create-react-apps
 >reduxapp
 
 
+>npm i -g angular/cli
+>ng new myapp
 
+> module => to declare all component,
+> component  => each page actlike component 
+> pipe => run time data manupulation
+> routing => to handle pages
+> services => to connect with backend
+> directive => small portion of page
